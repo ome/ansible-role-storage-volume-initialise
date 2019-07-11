@@ -1,6 +1,9 @@
 Storage Volume Initialise
 =========================
 
+[![Build Status](https://travis-ci.org/ome/ansible-role-storage-volume-initialise.svg)](https://travis-ci.org/ome/ansible-role-storage-volume-initialise)
+[![Ansible Role](https://img.shields.io/ansible/role/41955.svg)](https://galaxy.ansible.com/ome/storage_volume_initialise/)
+
 Formats and mounts a storage partition.
 
 Note this does not create any partitions or storage devices.
