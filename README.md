@@ -1,7 +1,7 @@
 Storage Volume Initialise
 =========================
 
-[![Build Status](https://travis-ci.org/ome/ansible-role-storage-volume-initialise.svg)](https://travis-ci.org/ome/ansible-role-storage-volume-initialise)
+[![Actions Status](https://github.com/ome/ansible-role-storage-volume-initialise/workflows/Molecule/badge.svg)](https://github.com/ome/ansible-role-storage-volume-initialise/actions)
 [![Ansible Role](https://img.shields.io/ansible/role/41989.svg)](https://galaxy.ansible.com/ome/storage_volume_initialise/)
 
 Formats and mounts a storage partition.
