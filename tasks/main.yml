@@ -2,19 +2,19 @@
 # Format and mount openstack volume
 
 - name: storage volume | install xfs
-  become: yes
+  become: true
   yum:
     pkg: xfsprogs
     state: present
 
 - name: storage volume | format
-  become: yes
+  become: true
   filesystem:
     fstype: xfs
     dev: "{{ storage_volume_initialise_device }}"
 
 - name: storage volume | mount
-  become: yes
+  become: true
   mount:
     fstype: xfs
     name: "{{ storage_volume_initialise_mount }}"
