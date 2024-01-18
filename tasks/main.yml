@@ -3,19 +3,19 @@
 
 - name: storage volume | install xfs
   become: true
-  yum:
+  ansible.builtin.dnf:
     pkg: xfsprogs
     state: present
 
 - name: storage volume | format
   become: true
-  filesystem:
+  ansible.builtin.filesystem:
     fstype: xfs
     dev: "{{ storage_volume_initialise_device }}"
 
 - name: storage volume | mount
   become: true
-  mount:
+  ansible.builtin.mount:
     fstype: xfs
     name: "{{ storage_volume_initialise_mount }}"
     opts: noatime
