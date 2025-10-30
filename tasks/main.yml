@@ -9,13 +9,13 @@
 
 - name: storage volume | format
   become: true
-  ansible.builtin.filesystem:
+  community.general.filesystem:
     fstype: xfs
     dev: "{{ storage_volume_initialise_device }}"
 
 - name: storage volume | mount
   become: true
-  ansible.builtin.mount:
+  ansible.posix.mount:
     fstype: xfs
     name: "{{ storage_volume_initialise_mount }}"
     opts: noatime
